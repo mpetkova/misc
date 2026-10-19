@@ -1,0 +1,16 @@
+1. Describe a systems or infrastructure decision you initially thought was right but later changed your mind on. Why?
+I developed a multi-step AWS workflow to run inference on a weather dataset. The pre- and post-processing steps worked well, however we had capacity issues while running the ML inference steps.
+these were run in parallel on AWS Batch and I opted to use spot instances for this step to reduce costs. The step however required 80 iterations and we were consistently hitting capacity lilmits
+, so I ultimately had to fall back to using on-demand instances. 
+
+2. Describe a time when you embarked on a sidequest / took initiative outside your core job responsibilities. What value did you add to your organization? What drove you to action?
+I designed a post-processing approoach for geospatial data that required standing up new database infrastructure. The team was wary of adding complexity to our tech stack, however I developed a
+PoC showing the approach would bring significant improvements to our output quality that we weren't reaching otherwise. We ended up adopting the approach in our workflow.
+
+3. Describe a time you changed how you use LLMs in your work — switching models, tools, or workflows. What did you observe that prompted the change?
+Using mcps to connect to project management software has improved my productivity and the way I track work. I'm able to use LLMs to complete more well defined or scoped work, while creating new
+tickets as I go along to fill in any gaps that I find. 
+
+4. Convince us that you're a systems person. How do you bring structure to a team that would otherwise slide into chaos?
+Communicate clearly and make sure you're aligned on priorities, responsibililties, and expectations. 
+
